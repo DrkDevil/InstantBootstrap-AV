@@ -4,7 +4,8 @@ This is an AngularJS base app that uses modules for easy injection control.
 Features:
 
 - AngularJS
-- Bootstrap
+- SASS (Only make your styles edits in /sass/)
+- Bootstrap-sass
 - Gulp-angular-templatecache
 
 This webapp requires these programs: 

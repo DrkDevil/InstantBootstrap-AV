@@ -1,12 +1,10 @@
-angular.module('form.directives', [
+angular.module('form.directives', [])
+.directive('formRow', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'form/row.html',
+    link: function (scope, element, attrs) {
 
-]).
-directive('formRow', function () {
-    return {
-        restrict: 'E',
-        templateUrl: 'form/row.html',
-        link: function (scope, element, attrs) {
-
-        }
-    };
+    }
+  };
 });

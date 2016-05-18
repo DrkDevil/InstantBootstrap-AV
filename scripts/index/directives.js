@@ -1,11 +1,9 @@
-angular.module('index.directives', [
+angular.module('index.directives', [])
+.directive('indexSectionOne', function () {
+  return function (scope, element, attrs) {
 
-]).
-directive('indexSectionOne', function () {
-    return function (scope, element, attrs) {
-
-    };
-}).
-directive('indexSectionTwo', function () {
-    
+  };
+})
+.directive('indexSectionTwo', function () {
+	
 });
