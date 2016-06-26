@@ -6,3 +6,4 @@ angular.module('baseApp', [
 	'baseApp.index',
 	'baseApp.form'
 ]);
+

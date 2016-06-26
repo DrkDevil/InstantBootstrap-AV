@@ -1,79 +1,82 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" class="no-js" ng-app="baseApp">
-  <head>
-    <!--<base href="/">-->
-    <meta charset="utf-8" />
-    <title>Base App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="author" href="/humans.txt" />
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:300,400" rel="stylesheet" type="text/css">
-
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
-    <!-- Page styles -->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <main ng-cloak>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Brand</a>
-            </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                  <li class="active"><a href="#/">Home</a></li>
-                  <li><a href="#/about">About</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="JavaScriptVoid:(0);">Bootstrap Templates</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        
-      <!-- AngularJS Routing -->
-      <div class="container" ng-view=""></div>
-      <!-- End Routing -->
-      <div class="container" ng-controller="formCtrl">
-        <h2>Form</h2>
-        <form name="baseForm" role="form">
-          <!-- AngularJS Directive -->
-          <form-row></form-row>
-          <!-- End Directive -->
-          <button type="button" class="btn btn-primary" ng-click="submitForm()">Submit</button>
-        </form>
+<head>
+<!--<base href="/">-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<link rel="author" href="/humans.txt" />
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+<!-- Custom styles for your template -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<main ng-cloak>
+  <nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		  <a class="navbar-brand" href="index.html">Instant<span class="instant">Bootstrap</span> <span class="badge alert-ibs">Angular Edition</span></a> </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/">Getting Started</a></li>
+          <li><a href="#/about">About</a></li>
+          <li class="dropdown"> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IBS Versions <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a target="_blank" href="http://drkdevil.github.io/InstantBootstrap/">InstantBootstrap Core</a></li>
+              <li class="active"><a href="javascript:void(0);">Angular Edition</a></li>
+              <li class="dropdown-header">Coming Soon</li>
+              <li class="disabled"><a href="javascript:void(0);">MVC Edition</a></li>
+              <li class="disabled"><a href="javascript:void(0);">Polymer Edition</a></li>
+              <li class="disabled"><a href="javascript:void(0);">WordPress Edition</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Angular Features <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#/soon">Angular Routing</a></li>
+              <li><a href="#/soon">Template Caching</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="javascript:void(0)"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bootstrap Templates <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li target="_blank"><a href="bs-templates/starter-template.htm">Starting Template</a></li>
+              
+            </ul>
+          </li>
+        </ul>
       </div>
-    </main>
-      
-
-    <!-- AngularJS Library files -->
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    
-    <!-- AngularJS Project files -->
-    <script defer src="scripts/templates.js"></script>
-    <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/index/index.js"></script>
-    <script defer src="scripts/index/controllers.js"></script>
-    <script defer src="scripts/index/directives.js"></script>
-    <script defer src="scripts/form/form.js"></script>
-    <script defer src="scripts/form/controllers.js"></script>
-    <script defer src="scripts/form/directives.js"></script>
-  </body>
+      <!--/.nav-collapse --> 
+    </div>
+  </nav>
+  <!-- AngularJS Routing -->
+  <div ng-view=""> </div>
+  <!-- End Routing -->
+</main>
+<!-- Jquery Library files   -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core Library files   -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AngularJS Library files --> 
+<script src="bower_components/angular/angular.min.js"></script> 
+<script src="bower_components/angular-route/angular-route.min.js"></script> 
+<!-- AngularJS Project files --> 
+<script defer src="scripts/templates.js"></script> 
+<script defer src="scripts/main.js"></script> 
+<script defer src="scripts/index/index.js"></script> 
+<script defer src="scripts/index/controllers.js"></script> 
+<script defer src="scripts/index/directives.js"></script> 
+<script defer src="scripts/form/form.js"></script> 
+<script defer src="scripts/form/controllers.js"></script> 
+<script defer src="scripts/form/directives.js"></script>
+</body>
 </html>

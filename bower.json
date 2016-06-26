@@ -1,6 +1,6 @@
 {
   "name": "BaseApp",
-  "description": "Base AngularJS app with routing.",
+  "description": "Bootstrap AngularJS Base App with Routing.",
   "main": "",
   "moduleType": [],
   "license": "MIT",
@@ -16,6 +16,7 @@
     "bootstrap": "~3.3.6",
     "angular": "~1.4.9",
     "angular-route": "~1.4.9",
-    "bootstrap-sass": "^3.3.6"
+    "bootstrap-sass": "^3.3.6",
+	"FortAwesome/Font-Awesome": "*"
   }
 }

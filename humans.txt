@@ -1,17 +1,20 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
-  Developer:
-  Site:
-  Twitter:
-  Location: Fort Worth, TX
+# INSTANTBOOTSTRAP
+  Developer: Brian Orr
+  Site:DigitalReligion.net
+  Twitter:@digitalreligion
+  Location: Dallas, TX
 
-# THANKS
-  <name>
+# ANGULAR BASE MOD
+  Developer: Josh Alcalan
+  Site:https://github.com/doubledead
+  Twitter:
+  Location: FT Worth, TX
 
 # TECHNOLOGY COLOPHON
-  HTML5, CSS3,
+  HTML5, CSS3,FontAwesome.css
   Normalize.css, Sass/Compass
-  AngularJS, jQuery, Modernizr, GruntJS
-  MS Visual Studio 2013
+  AngularJS, jQuery, Modernizr, GULP
+  MS Visual Studio 2015, Dreamweaver 2017

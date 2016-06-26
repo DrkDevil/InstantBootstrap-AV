@@ -3,25 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <!-- Note there is no responsive meta tag here -->
-
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Non-responsive Template for Bootstrap</title>
+    <title>Navbar Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../source/demo/css/non-responsive.css" rel="stylesheet">
+    <link href="demo-assets/navbar.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../source/demo/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../source/demo/js/ie-emulation-modes-warning.js"></script>
+    <script src="demo-assets/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,8 +30,10 @@
 
   <body>
 
-    <!-- Fixed navbar -->
-     <nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+
+      <!-- Static navbar -->
+         <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -89,29 +89,13 @@
       </div>
     </nav>
 
-
-    <div class="container">
-
-      <div class="page-header">
-        <h1>Non-responsive Bootstrap</h1>
-        <p class="lead">Disable the responsiveness of Bootstrap by fixing the width of the container and using the first grid system tier. <a href="http://getbootstrap.com/getting-started/#disable-responsive">Read the documentation</a> for more information.</p>
-      </div>
-
-      <h3>What changes</h3>
-      <p>Note the lack of the <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>, which disables the zooming aspect of sites in mobile devices. In addition, we reset our container's width and changed the navbar to prevent collapsing, and are basically good to go.</p>
-
-      <h3>Regarding navbars</h3>
-      <p>As a heads up, the navbar component is rather tricky here in that the styles for displaying it are rather specific and detailed. Overrides to ensure desktop styles display are not as performant or sleek as one would like. Just be aware there may be potential gotchas as you build on top of this example when using the navbar.</p>
-
-      <h3>Browsers, scrolling, and fixed elements</h3>
-      <p>Non-responsive layouts highlight a key drawback to fixed elements. <strong class="text-danger">Any fixed component, such as a fixed navbar, will not be scrollable when the viewport becomes narrower than the page content.</strong> In other words, given the non-responsive container width of 970px and a viewport of 800px, you'll potentially hide 170px of content.</p>
-      <p>There is no way around this as it's default browser behavior. The only solution is a responsive layout or using a non-fixed element.</p>
-
-      <h3>Non-responsive grid system</h3>
-      <div class="row">
-        <div class="col-xs-4">One third</div>
-        <div class="col-xs-4">One third</div>
-        <div class="col-xs-4">One third</div>
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
       </div>
 
     </div> <!-- /container -->
@@ -120,9 +104,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../source/demo/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="demo-assets/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
