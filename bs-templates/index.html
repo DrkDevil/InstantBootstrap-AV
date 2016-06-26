@@ -9,17 +9,17 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>InstantBootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../source/demo/css/starter-template.css" rel="stylesheet">
+    <link href="demo-assets/jumbotron-index.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../source/demo/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../source/demo/js/ie-emulation-modes-warning.js"></script>
+    <script src="demo-assets/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
 
   <body>
 
-       <nav class="navbar navbar-fixed-top navbar-inverse">
+   <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -85,22 +85,34 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div class="container">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>InstantBootstrap <span class="badge alert-warning">Core Edition</span></h1>
+        <p>Want the Orginal verison of Instant Bootstrap. <br>The quickest, and easiest way to start creating bootstrap themes using LESS, SASS, GRUNT, and BOWER.</p>
+        <p><a class="btn btn-success btn-lg" href="https://github.com/DrkDevil/InstantBootstrap" role="button">Get It Here &raquo;</a></p>
       </div>
+    </div>
 
-    </div><!-- /.container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Getting Started</h2>
+			<p>These templates can be found at <a target="_blank" href="http://www.getbootstrap.com">getbootstrap.com</a>, but we included them in our package for you so you can get started using bootstrap even quicker. </p>
+		  </div>
+      </div>
+    </div>
+
+    
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../source/demo/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="demo-assets/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

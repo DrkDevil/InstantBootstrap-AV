@@ -19,18 +19,18 @@ angular.module('baseApp.index', [
 .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/', { 
-      title: 'BaseApp - Index', 
+      title: 'InstantBootstrap - Angular Edition', 
       templateUrl: 'main.html', 
       controller: 'IndexCtrl' 
     })
     .when('/about', { 
-      title: 'BaseApp - About', 
+      title: 'InstantBootstrap - About', 
       templateUrl: 'about.html', 
       controller: 'IndexCtrl' 
     })
-	.when('/template-1', { 
-      title: 'BaseApp - About', 
-      templateUrl: '/bs-templates/grids.html', 
+	.when('/soon', { 
+      title: 'Under Construction', 
+      templateUrl: 'soon.html', 
       controller: 'IndexCtrl' 
     })
     .otherwise({ redirectTo: '/' });
