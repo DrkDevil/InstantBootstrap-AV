@@ -1,4 +1,4 @@
-### InstantBootstrap
+### InstantBootstrap - Angular Edition: Alpha Version
 A no mess, easy way to start creating custom Angular Apps, and Twiter Bootstrap themes
 using SASS, BOWER, and GULP with little to no configuration at all.GRUNT, and BOWER.
 
